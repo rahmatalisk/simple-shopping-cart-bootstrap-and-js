@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center fw-bold text-primary mt-4">Shopping Cart !!!</h1>
+    </header>
+    <main>
+        <section>
+            <div class="w-50 mx-auto mt-4">
+                <div class="row row-cols-3 shadow-lg align-items-center p-2 justify-content-center rounded">
+                    <div class="col-5">
+                        <div class="row row-cols-2 align-items-center">
+                            <img style="width: 100px;" class="" src="images/iphone.jpg" alt="" width="100px">
+                            <h4>iPhone-m54</h4>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <button style="cursor: pointer;" class="border-0 fw-bold fs-2 px-3 shadow-lg pb-1 rounded" id="phone-minus">-</button>
+                        <span class="fw-bold fs-2 shadow-lg pb-1 px-2 rounded" id="phone-input">1</span>
+                        <button style="cursor: pointer;" class="border-0 fw-bold fs-2 px-3 shadow-lg pb-1 rounded" id="phone-plus">+</button>
+                    </div>
+                    <span class="fw-bold col-2 fs-2 text-center" >$<span id="phone-total">1567</span></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="w-50 mx-auto mt-4">
+                <div class="row row-cols-3 shadow-lg align-items-center p-2 justify-content-center rounded">
+                    <div class="col-5">
+                        <div class="row row-cols-2 align-items-center">
+                            <img style="width: 100px;" class="" src="images/i-phone-casejpg.jpg" alt="" width="100px">
+                            <h4>iPhone-case</h4>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <button style="cursor: pointer;" class="fw-bold fs-2 px-3 shadow-lg pb-1 rounded border-0" id="case-minus">-</button>
+                        <span class="fw-bold fs-2 shadow-lg pb-1 px-2 rounded" id="case-input">1</span>
+                        <button style="cursor: pointer;" class="fw-bold fs-2 px-3 shadow-lg pb-1 rounded border-0" id="case-plus" >+</button>
+                    </div>
+                    <span class="fw-bold col-2 fs-2 text-center">$<span id="case-total">127</span></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="w-50 mx-auto mt-4">
+                <div class="row row-cols-2 shadow-lg align-items-center p-2 justify-content-between rounded">
+                    <div class="col-3">
+                        <h3>Total</h3>
+                        <h3>Tax</h3>
+                        <h3>Subtotal</h3>
+                    </div>
+                    <div class="col-3">
+                        <h1 class="fw-bold fs-2 px-3 shadow-lg pb-1 rounded">$<span id="total">1694</span></h1>
+                        <h1 class="fw-bold fs-2 shadow-lg pb-1 px-3 rounded">$ <span id="tax">0</span></h1>
+                        <h1 class="fw-bold fs-2 px-3 shadow-lg pb-1 rounded">$<span id="sub-total">1694</span></h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
